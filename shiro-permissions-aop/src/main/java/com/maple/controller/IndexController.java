@@ -18,10 +18,10 @@ public class IndexController {
      * 加上aop依赖 去掉权限注解正常访问
      * {@link com.maple.config.ShiroConfig DefaultAdvisorAutoProxyCreator} 配置proxyTargetClass,usePrefix其中一个为true
      * 返回  {@link org.apache.shiro.authz.UnauthenticatedException} 异常
-     * {@link com.maple.config.ShiroConfig DefaultAdvisorAutoProxyCreator} 不配置或都配置为false时404异常 无法映射请求
+     * {@link com.maple.config.ShiroConfig #DefaultAdvisorAutoProxyCreator} 不配置或都配置为false时404异常 无法映射请求
      */
-    @GetMapping
     @RequiresPermissions("admin")
+    @GetMapping
     public String empty() {
         return "hello";
     }
