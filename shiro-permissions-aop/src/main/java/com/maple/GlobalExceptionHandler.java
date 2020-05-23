@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 public class GlobalExceptionHandler {
     @ExceptionHandler(value = AuthorizationException.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-    public String AuthorizationException(AuthorizationException throwable) {
+    public String authorizationException(AuthorizationException throwable) {
         log.error("发生了异常: ", throwable);
         return "权限注解生效";
     }
