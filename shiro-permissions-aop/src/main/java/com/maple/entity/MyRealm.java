@@ -19,6 +19,18 @@ import org.apache.shiro.subject.PrincipalCollection;
  */
 @Slf4j
 public class MyRealm extends AuthorizingRealm {
+    /**
+     * 账号
+     */
+    private String account;
+    /**
+     * 密码
+     */
+    private String password;
+    /**
+     * 性别
+     */
+    private String sex;
 
 
     /**
