@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.lang.reflect.Type;
 
 /**
- * jackson 优先级测试序列化器
+ * fast json 优先级测试序列化器
  *
  * @author maple
  * @version 1.0
