@@ -17,7 +17,7 @@ import lombok.ToString;
 @ToString
 //@JSONType(deserializer = FastJsonEnumDeserializer.class)
 @JSONType(serializer = FastJsonEnumSerializer2.class)
-public enum FastJsonStatusEnum implements BaseEnum {
+public enum FastJsonStatusEnum {
     /**
      * 枚举值
      */

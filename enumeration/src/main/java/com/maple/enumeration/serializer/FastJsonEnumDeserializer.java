@@ -15,7 +15,7 @@ import java.util.Objects;
 /**
  * fast json反序列化器
  *
- * @author gonghs
+ * @author maple
  * @version 1.0
  * @since 2020-06-23 02:07
  */
